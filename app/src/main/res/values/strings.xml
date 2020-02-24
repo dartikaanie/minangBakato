@@ -12,5 +12,8 @@
     <string name="petatah" />
     <string name="pituah" />
     <string name="kamus" />
+    <string name="tab_text_1">Speed Dial</string>
+    <string name="tab_text_2">Recents</string>
+    <string name="tab_text_3">Contacts</string>
 
 </resources>

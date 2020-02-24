@@ -37,6 +37,7 @@ public class KamusAdapter extends RecyclerView.Adapter<KamusAdapter.KamusHolder>
     public void onBindViewHolder(@NonNull KamusHolder holder, int position) {
         Kamus kamusItem = dataKamus.get(position);
         holder.tvKeyword.setText(kamusItem.getKeyword());
+        holder.tvArti.setText(kamusItem.getArti());
 
     }
 
@@ -52,10 +53,11 @@ public class KamusAdapter extends RecyclerView.Adapter<KamusAdapter.KamusHolder>
     }
 
     public class KamusHolder extends RecyclerView.ViewHolder{
-        TextView tvKeyword;
+        TextView tvKeyword, tvArti;
         public KamusHolder(View itemView) {
             super(itemView);
             tvKeyword = itemView.findViewById(R.id.keywordItem);
+            tvArti = itemView.findViewById(R.id.tvArti);
 //            itemView.setOnClickListener(new View.OnClickListener() {
 //                @Override
 //                public void onClick(View view) {

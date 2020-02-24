@@ -44,8 +44,6 @@ public class petatahFragment extends Fragment implements PepatahAdapter.OnKlikKe
         kamusList.add(new Kamus("Samuik tapijak indak mati", " Sifat seseorang yang tegas bertindak atas kebenaran dengan bijaksana"));
         kamusList.add(new Kamus("Walau kaie nan di bantuak, ikan di lauik nan di hadang ", "mengajak orang untuk memikirkan visi misi dari pekerjaan yang dilakukan"));
         kamusList.add(new Kamus("Buruak Muko Camin dibalah", "seseorang yang melakukan kesalahan karena kebodohannya, tapi menyalahkan orang lain atau aturan"));
-
-
         return kamusList;
     }
 

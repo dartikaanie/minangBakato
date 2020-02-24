@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.pituah.pituahFragment">
-
+    tools:context=".ui.kamus.KamusFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +12,7 @@
         android:orientation="vertical">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_pituah"
+            android:id="@+id/tab_kamus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/frameLayout"
@@ -23,19 +22,20 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Laki- Laki" />
+                android:text="Minang - Indo" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Perempuan" />
+                android:text="Indo - Minang" />
 
         </com.google.android.material.tabs.TabLayout>
 
         <FrameLayout
-            android:id="@+id/frameLayoutPituah"
+            android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"></FrameLayout>
     </LinearLayout>
+
 
 </FrameLayout>

@@ -3,6 +3,7 @@ package com.example.minangbakato;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.minangbakato.ui.kamus.KamusFragment;
 import com.example.minangbakato.ui.kamus.KamusMingDoFragment;
 import com.example.minangbakato.ui.petatah.petatahFragment;
 import com.example.minangbakato.ui.pituah.pituahFragment;
@@ -32,7 +33,7 @@ public class KamusActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         toolbar.setTitle("MINANG BAKATO");
-        loadFragment(new KamusMingDoFragment());
+        loadFragment(new KamusFragment());
         toolbar.setSubtitle("Kamus");
     }
 
@@ -44,7 +45,7 @@ public class KamusActivity extends AppCompatActivity {
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.nav_kamus:
-                    loadFragment(new KamusMingDoFragment());
+                    loadFragment(new KamusFragment());
                     toolbar.setSubtitle("Kamus");
                     return true;
                 case R.id.nav_pepatah:

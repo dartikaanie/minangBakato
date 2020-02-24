@@ -37,7 +37,11 @@ public class PepatahAdapter extends RecyclerView.Adapter<PepatahAdapter.KamusHol
     public void onBindViewHolder(@NonNull KamusHolder holder, int position) {
         Kamus kamusItem = dataKamus.get(position);
         holder.tvKeyword.setText(kamusItem.getKeyword());
-        holder.tvArti.setText(kamusItem.getArti());
+        if(kamusItem.getArti().length() >= 95){
+            holder.tvArti.setText(kamusItem.getArti().substring(0,95) + " . . .");
+        }else{
+            holder.tvArti.setText(kamusItem.getArti());
+        }
 
     }
 
@@ -58,13 +62,13 @@ public class PepatahAdapter extends RecyclerView.Adapter<PepatahAdapter.KamusHol
             super(itemView);
             tvKeyword = itemView.findViewById(R.id.keywordItem);
             tvArti = itemView.findViewById(R.id.arti);
-//            itemView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    Kamus kamusItem = dataKamus.get(getAdapterPosition());
-//                    klikKeyword.OnKlikKeyword(kamusItem);
-//                }
-//            });
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Kamus kamusItem = dataKamus.get(getAdapterPosition());
+                    klikKeyword.OnKlikKeyword(kamusItem);
+                }
+            });
         }
 
     }

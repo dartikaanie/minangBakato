@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.kamus.KamusMingDoFragment">
-
-
+    tools:context=".ui.kamus.KamusDoMingFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +16,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:padding="3dp"
-            android:text="Minang - Indonesia"
+            android:text="Indonesia - Minang"
             android:textAlignment="center"
             android:textColor="@color/cardview_light_background"
             android:textSize="14sp"
